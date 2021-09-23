@@ -1,0 +1,52 @@
+@media only screen and (max-width: 768px) {
+    header .navbar-brand {
+      padding-left: 1rem;
+    }
+    .section-1 .row .col-md-6 .panel {
+      position: initial;
+      width: initial;
+      height: initial;
+    }
+    .section-2 .cover {
+      background-position: -25vmin -10vmin;
+    }
+    .numbers .rect {
+      width: 10rem;
+      height: 8rem;
+    }
+    .numbers .rect h1 {
+      font-size: 2rem;
+    }
+  
+    .section-4 .carousel-item {
+      padding-left: 0.6rem;
+    }
+    footer .row .col-md-2 {
+      margin-top: 8vmin;
+    }
+  }
+  
+  /* screen size 375px */
+  
+  @media only screen and (max-width: 375px) {
+    .section-4 .card {
+      width: 18em;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .section-4 .carousel-inner {
+      margin-left: -4vmin;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .hi {
+    display: none;
+    }
+  }
+  @media only screen and (min-width:901px)and (max-width: 1500px) {
+    .hi {
+    display: block;
+    }
+  }
+  
