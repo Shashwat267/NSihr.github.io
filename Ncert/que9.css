@@ -1,0 +1,106 @@
+body{
+    
+        background: linear-gradient(to right, #ee0979, #ff6a00);
+        margin: 2vh 3vh;
+       
+}
+.container{
+ 
+    background: white;
+    padding: 2vh;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin-bottom: 2%;
+ 
+ }
+ .heading{
+     color: #aa0957;
+ }
+ a{
+     color: palevioletred;
+     text-decoration: none;
+     
+ }
+table{
+    padding: 2vh 10vh;
+
+  border-width: 2px;
+  border-color: honeydew;
+}
+.container_2{
+    
+    background: white;
+    padding: 2vh;
+    border-radius: 30px;
+    width: 60%;
+   float:right ;
+   
+  
+}
+.con1_0{
+   
+    background: white;
+    padding: 2vh;
+    border-radius: 30px;
+    width: 60%;
+float: right;
+ margin-bottom: 2%;
+  
+}
+.conttt{
+    margin: 2%;
+}
+.container2{
+    float: left;
+    background: white;
+    padding: 2vh;
+    border-radius: 30px;
+    text-align: center;
+    width: 30%;
+    float: left;
+    margin-bottom: 3%;
+}
+@media only screen and (min-width:740px)and (max-width: 1200px) {
+    .con1_0{
+        display: none;
+       
+    }
+    .contttt{
+        display :none;
+    }
+    .container{
+        width: 40%;
+        float: center;
+    }
+    .container2{
+        width: 40%;
+        float: center;
+    margin-left: 5%;
+    }
+    table{
+        padding: 1% 10%;}
+    
+  }
+  @media only screen and (min-width:0px)and (max-width: 739px) {
+    .con1_0{
+        display: none;
+       
+    }
+    .contttt{
+        display :none;
+    }
+    .container{
+        width: 90%;
+        float: center;
+    }
+    .container2{
+        width: 90%;
+        float: center;
+  
+    }
+    table{
+        padding: 1% 10%;}
+    
+  }

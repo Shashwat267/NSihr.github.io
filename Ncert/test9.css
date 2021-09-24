@@ -1,0 +1,95 @@
+body{
+   background:  #fc308f;
+   margin: 10vh 5vh;
+}
+.container{
+
+   background: white;
+   padding: 10vh;
+   border-radius: 30px;
+   
+
+}
+.heading{
+    color:   #bb0b5d;
+    text-align: center;
+}
+hr{
+    color:   #ec74ac;
+}
+button{
+    width: 45%;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    background:  #f38abb;
+    box-shadow: black;
+}
+button:hover{
+    background: #fc308f ;
+    box-shadow: 2px black;
+}
+a{
+   color:#fff ;
+    text-decoration: none;
+}
+a:hover{
+    color:#fff ;
+    text-decoration: none;
+}
+.eading{
+    color:   #bb0b5d;
+    text-align: center;
+}
+h4{
+    color:   #fc308f;
+   
+}
+@media only screen and (min-width:672px)and (max-width: 900px) {
+    button{
+        width: 45%;
+        border-radius: 10px;
+        padding: 1%;
+        margin: 1%;
+        height: 10% ;
+    }
+    .container{ 
+        padding: 4vh;     
+     
+     }
+  }
+  @media only screen and (min-width:300px)and (max-width: 671px) {
+    button{
+        width: 100%;
+        border-radius: 10px;
+        padding: 1%;
+        margin: 1%;
+        height: 10% ;
+    }
+    .container{ 
+        padding: 2vh;     
+     
+     }
+     body{
+         margin: 3vh 2vh ;
+     }
+
+  }
+  @media only screen and (min-width:0px)and (max-width: 299px) {
+    button{
+        width: 100%;
+        border-radius: 10px;
+        padding: 1%;
+        margin: 1%;
+        height: 10% ;
+    }
+    .container{ 
+        padding: 2vh;    
+        border-radius: 0; 
+     
+     }
+     body{
+         margin: 0 ;
+     }
+
+  }

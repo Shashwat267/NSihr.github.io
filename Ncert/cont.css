@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    margin: 5vh 20vh;
+ }
+ button{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+ }
+#contact{
+   border-radius: 30%;
+}
+ 

@@ -1,0 +1,35 @@
+
+div{
+    border-radius: 30px ;
+    width: 40vm;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    padding: 20px;
+    height: 100pxpx;
+    text-align: center;
+  background: #ff2f5c;
+  
+ 
+}
+.class{
+  font-size: 50px;
+ margin-left: 10em;
+  color: rgb(8, 0, 0);
+  font-family: var(--Sniglet-font);
+  text-decoration: underline;
+}
+a{
+  color: white;
+  text-decoration: none;
+
+}
+ a:hover{
+ text-decoration: none;
+ color: white;
+}
+.dad{
+  background-color: rgb(145, 22, 73);
+  margin: 3vh;
+}
