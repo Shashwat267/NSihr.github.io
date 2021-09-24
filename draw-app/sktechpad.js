@@ -69,7 +69,7 @@ var putPoint = (e) => {
 
 var engage = (e) => {
     canvas.addEventListener('mousemove', putPoint);
-
+    canvas.addEventListener('touchmove', putPoint);
     if (bgFillOn) {
         context.fillStyle = bgFillColor;
         context.fillRect(0, 0, canvas.width, canvas.height);
@@ -97,6 +97,8 @@ var disengage = () => {
 
 canvas.addEventListener('mousedown', engage);
 canvas.addEventListener('mouseup', disengage);
+canvas.addEventListener('touchstart', engage);
+canvas.addEventListener('touchend', disengage);
 
 var minRad = 0.5,
     maxRad = 100,
