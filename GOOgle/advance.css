@@ -1,0 +1,46 @@
+ul{
+    margin: 20px;
+    justify-content: space-between;
+}
+a:hover{
+    color: blue;    
+}
+input{
+    margin: 30px;
+}
+input[type="submit"]{
+    width: 200px;
+    height: 30px;
+    background-color: rgba(0, 0, 255, 0.788);
+    border-width: 0px;
+    box-shadow: rgba(0, 0, 0, 0.473);
+}
+label{
+    margin-left: 30px;
+}
+input[type="text"]{
+    overflow: visible;
+}
+img{
+    margin-left: 20PX;
+}
+h4{
+    color: maroon;
+    margin-left:30px ;
+}
+p{
+    margin-left: 30px ;
+    margin-bottom: 0px;
+}
+.num{
+    max-width: 100px;
+}
+.submit{
+    margin-left: 50%;
+}
+footer{
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color:white;
+}

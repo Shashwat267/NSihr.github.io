@@ -1,0 +1,162 @@
+ul{
+    margin: 20px;
+    justify-content: space-between;
+}
+a:hover{
+    color: blue;    
+}
+input{
+    margin: 30px;
+}
+input[type="submit"]{
+    width: 150px;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.788);
+    border-radius: 50px;
+    border-width: 0px;
+    box-shadow: rgba(0, 0, 0, 0.473);
+}
+input[type="text"]{
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    border-width: 1px;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%) ;
+    top: 45%;
+    transform: translatex(-50%);
+}
+img{
+    position: absolute;
+    left: 47%;
+    transform: translateX(-50%) ;
+    top: 15%;
+    transform: translatex(-50%);
+}
+.button-1{
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%) ;
+    top: 55%;
+    transform: translatex(-50%);
+}
+.button-2{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) ;
+    top: 55%;
+    transform: translatex(-50%);
+}
+.button-3{
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%) ;
+    top: 55%;
+    transform: translatex(-50%);
+}
+@media screen and (max-device-width:600px),screen and (min-device-width:500px) {
+    ul{
+        justify-content: flex-start;
+    }
+    img{
+        width: 30%;
+        height: 30%;
+        position: absolute;
+        left: 47%;
+        transform: translateX(-50%) ;
+        top: 20%;
+        transform: translatex(-50%);
+        }
+    input[type="text"]{
+        width: 40%;
+        height: 6%;
+        justify-self: center;
+    }
+    input[type="submit"]{
+        height: 7%;
+        justify-self: center;
+        margin-top: 10%;
+        background-color: whitesmoke;
+        border-color: grey;
+        border-radius: 1px;
+        color: none;
+        height: 4%;
+    }
+    .button-2{
+        width:40% ;
+        position: absolute;
+        left: 80%;
+        transform: translateX(-50%) ;
+        top: 55%;
+        transform: translatex(-50%);
+    }
+    .button-1{
+        width: 10%;
+        position: absolute;
+        left: 20%;
+        transform: translateX(-50%) ;
+        top: 55%;
+        transform: translatex(-50%);
+    
+    }
+}
+
+@media screen and (max-device-width:500px) {
+    img{
+        width: 50%;
+        height: 20%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) ;
+        top: 30%;
+        transform: translatex(-50%);
+    }
+    .button-1{
+       width: 5%;
+       position: absolute;
+       left: 0%;
+      
+       top: 55%;
+       transform: translatex(-50%);
+    }
+    .button-2{
+        width: 10%;
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%) ;
+        top: 55%;
+        transform: translatex(-50%);
+    }
+}
+@media screen and (max-device-width: 800px),screen and (min-device-width:600px){
+    .button-1{
+        width: 10%;
+        position: absolute;
+        left: 30%;
+        transform: translateX(-50%);
+        top: 55%;
+        transform: translatex(-50%);
+    }
+    .button-2{
+        width: 10%;
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%) ;
+        top: 55%;
+        transform: translatex(-50%);
+    }
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    background-color:white;
+    color:black;
+   
+}
+
+
