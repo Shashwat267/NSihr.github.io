@@ -66,10 +66,34 @@ var putPoint = (e) => {
         context.moveTo(x, y);
     }
 }
+canvas.addEventListener('touchmove',handleTouchMove);
+function handleTouchMove(evt) 
 
-var engage = (e) => {
+{
+
+    var touches = evt.changedTouches;
+    var offset = findPos(canvas);
+    for (var i = 0; i < touches.length; i++) 
+    {
+        if(isValidTouch(touches[i])) 
+        {
+            evt.preventDefault();
+            var idx = ongoingTouchIndexById(touches[i].identifier);
+            if (idx >= 0) 
+            {
+                ctx.beginPath();
+                ctx.moveTo(arr_touches[idx].clientX-offset.x, arr_touches[idx].clientY-offset.y);
+                ctx.lineTo(touches[i].clientX-offset.x, touches[i].clientY-offset.y);
+                ctx.strokeStyle = color;
+                ctx.stroke();
+                
+                arr_touches.splice(idx, 1, copyTouch(touches[i]));
+            }   
+        }
+    }
+}var engage = (e) => {
     canvas.addEventListener('mousemove', putPoint);
-    canvas.addEventListener('touchmove', putPoint);
+    
     if (bgFillOn) {
         context.fillStyle = bgFillColor;
         context.fillRect(0, 0, canvas.width, canvas.height);
