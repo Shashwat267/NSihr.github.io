@@ -1,0 +1,90 @@
+body{
+    margin: 10px;
+}
+header{
+     text-align: center;
+     font-size: 91px;
+     font-family: ZCOOL KuaiLe;
+     padding-left: 20px;
+     padding-right: 20px;
+     background-color: aqua;
+     text-decoration-color: rgb(9, 9, 102);
+     text-shadow: rgba(0, 0, 0, 0.664);
+     border: solid steelblue 5px ;
+     height: 95px;
+     border-radius: 6px;
+}
+header h1{
+    font-size: 80px;
+}
+nav{
+    height: 49px;
+    border-radius: 8px;
+}
+section{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f4f4f4
+}
+.found{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f4f4f4;
+    height:500px;
+}
+.books{
+    padding-bottom: 10px;
+}
+h2{
+    text-decoration: underline;
+}
+.sarthak{
+    border-radius: 50%;
+}
+@media screen and (max-width:1045px) and (min-width:601px){
+    img{
+        height:500px;
+        display:inline;
+        width: 50%;
+
+    }
+    .sarthak{
+    display:hide;
+    
+}
+    .container{
+        bottom:0%;
+    }  
+        
+}
+@media screen and (max-width:600px) and (min-width:400px){
+     img{
+         height: 600px;
+         display: block;
+        width: 100%;
+     }
+     .sarthak{
+         height:500px;
+         display: block;
+         width:40%;
+         align-content: center;
+     }
+
+}
+@media screen and (max-width:599px) and (min-width:100px){
+     img{
+         height: 500px;
+         display: block;
+        width: 100%;
+     }
+     .sarthak{
+         height:300px;
+         display: block;
+         width:40%;
+         align-content: center;
+     }
+
+    }
+
