@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+
+
+<html> 
+
+   <head> 
+   <title>NSihr|Calculator</title>
+      <script> 
+         function dis(val){ 
+             document.getElementById("result").value+=val 
+         } 
+         function solve(){ 
+             try {
+    let x = document.getElementById("result").value 
+             let y = eval(x) 
+             document.getElementById("result").value = y
+}
+catch(err){
+    alert("Please enter valid expression");
+    document.getElementById("result").value = "";
+}
+
+         } 
+         function clr(){ 
+             document.getElementById("result").value = "" 
+         } 
+
+      </script> 
+
+      
+
+      <style> 
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+                
+}
+#result{
+                 outline:none;
+            border:none;
+            color: white;
+            backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    background-color: transparent;
+    overflow: visible;
+    }
+    
+tr{
+    border: solid rgb(252, 2, 177) 0px;
+}
+
+
+td{
+     border: solid rgb(252, 2, 177) 0px; 
+}
+
+
+main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right , #2E3192,#1BFFFF );
+    display: grid;
+    place-items: center;
+}
+
+
+.title{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    background-color: transparent;
+    padding: 2%;
+    border: none;
+    outline: none;
+    margin: 0%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+
+input{
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+       background: black;
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+ 
+
+input[type="button"]{ 
+    border: none; 
+    width:100%;
+    height: 60px;
+    font-size: 1.5rem;
+    transition: all .25s;
+    border-radius: 20px;
+}
+
+
+.result{ 
+    background:black; 
+    border: solid black 0px; 
+    width:100%; 
+    float:center;
+    position: relative;
+    font-size: 2rem;
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    background-color: transparent;
+    border-bottom:solid white 0.1px;
+}
+
+
+.result input{
+    width: 98%;
+    height: 90%;
+    padding: 5px 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    overflow: visible;
+    
+}
+
+
+input[type="button"]:hover{
+ 
+    color: black;
+}
+
+tbody{
+    overflow: scroll;
+}
+
+
+.title{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 2.8rem;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    background: -webkit-linear-gradient(135deg, white ,    #fff );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.clr{
+      color:#f8ff00;
+}
+
+.eq{
+      color:#e3ff00;
+}
+
+    </style> 
+    <link rel="icon" href="20210923_100220.jpg" sizes="16x16" type="image/png">
+
+   </head> 
+
+   <body> 
+                
+        
+                
+    <main>
+      <div class = title >Calculator</div> 
+      <table border="1"> 
+         <tr> 
+            <td class="result" colspan="3"><input type="text" id="result" disabled="true"></td>           
+            <td><input type="button" class="clr" value="c" onclick="clr()"/> </td> 
+         </tr> 
+         <tr>
+            <td><input type="button" value="1 " onclick="dis('1')"/> </td> 
+            <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+            <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+            <td><input type="button" value=" / " onclick="dis('/')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="4 " onclick="dis('4')"/> </td> 
+            <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+            <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+            <td><input type="button" value=" - " onclick="dis('-')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="7 " onclick="dis('7')"/> </td> 
+            <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+            <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+            <td><input type="button" value="+ " onclick="dis('+')"/> </td> 
+         </tr> 
+         <tr> 
+            <td><input type="button" value="  ." onclick="dis('.')"/> </td> 
+            <td><input type="button" value="0" onclick="dis('0')"/> </td>         
+            <td><input type="button" class="eq"                 value="=" onclick="solve()"/> </td> 
+           <td><input type="button" class="mlti" value="×" onclick="dis('*')"/> </td> 
+</tr> 
+
+      </table> 
+</main>
+   </body> 
+
+</html>
+ 
+
